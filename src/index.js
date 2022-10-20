@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Router from './components/Router';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <h1>Pagina Principal</h1>
+      <hr/>
+        <Router style={{display:"flex"}}/>
+      <hr/>
+      <h2>Pie de pagina</h2>
+    </div>
   </React.StrictMode>
 );
 
